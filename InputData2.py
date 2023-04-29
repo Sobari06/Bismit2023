@@ -11,39 +11,39 @@ client = gspread.authorize(creds)
 sheet = client.open('WEB_ORDER').sheet1
 
 # Render order form
-@app.route('/')
+@app.route('/',methods=['GET', 'POST'])
 def index():
-    return render_template('BomberPage.html')
+    if request.method == 'POST':
+        # Get form data
+        name = request.form['name']
+        email = request.form['email']
+        phone = request.form['phone']
+        product_name = request.form['product_name']
+        quantity = request.form['quantity']
+        order_description = request.form['order_description']
+        payment_proof = request.files['payment_proof']
 
-# Submit order form
-@app.route('/submit', methods=['POST'])
-def submit():
-    # Get form data
-    name = request.form['name']
-    email = request.form['email']
-    phone = request.form['phone']
-    product_name = request.form['product_name']
-    quantity = request.form['quantity']
-    order_description = request.form['order_description']
-    payment_proof = request.files['payment_proof']
+        # Save payment proof to Google Drive
+        file_name = payment_proof.filename
+        payment_proof.save(file_name)
+        drive_folder_id = '1te4a3TstjVeLBuTqvcogt0IPl9kaSnbN'
+        file_metadata = {'name': file_name, 'parents': [drive_folder_id]}
+        media = googleapiclient.http.MediaFileUpload(file_name, resumable=True)
+        drive_service = build('drive', 'v3', credentials=creds)
+        file = drive_service.files().create(body=file_metadata, media_body=media, fields='id').execute()
+        file_id = file.get('id')
 
-    # Save payment proof to Google Drive
-    file_name = payment_proof.filename
-    payment_proof.save(file_name)
-    drive_folder_id = '1te4a3TstjVeLBuTqvcogt0IPl9kaSnbN'
-    file_metadata = {'name': file_name, 'parents': [drive_folder_id]}
-    media = googleapiclient.http.MediaFileUpload(file_name, resumable=True)
-    drive_service = build('drive', 'v3', credentials=creds)
-    file = drive_service.files().create(body=file_metadata, media_body=media, fields='id').execute()
-    file_id = file.get('id')
+        # Save order data to Google Sheets
+        current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        order_data = [current_date, name, email, phone, product_name, quantity, order_description, file_id]
+        sheet.insert_row(order_data, 2)
+    
 
-    # Save order data to Google Sheets
-    current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    order_data = [current_date, name, email, phone, product_name, quantity, order_description, file_id]
-    sheet.insert_row(order_data, 2)
-
-    # Render confirmation page
-    return render_template('success.html')
+        # Render confirmation page
+        return render_template('success.html')
+    else:
+        # Render order form
+        return render_template('BomberPage.html')
 
 if __name__ == '__main__':
     app.run()
