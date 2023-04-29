@@ -16,8 +16,8 @@ def index():
     return render_template('BomberPage.html')
 
 # Submit order form
-@app.route('/', methods=['POST'])
-def submit_order():
+@app.route('/submit', methods=['POST'])
+def submit():
     # Get form data
     name = request.form['name']
     email = request.form['email']
