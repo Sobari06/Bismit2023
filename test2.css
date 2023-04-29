@@ -1,0 +1,2181 @@
+/* =======-=-=-=-=-=-=-=-=-=Tampilan Website Untuk Galaxy Note 3=-=-=-=-=-=-=-=-=-==- */
+@media only screen and (min-width: 360px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    
+    
+    @keyframes muncul1{
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    
+      @keyframes muncul{
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    section nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        left: 0;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+    
+    section nav .logo img{
+        width: 150px;
+        cursor: pointer;
+        margin: 7px 0;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav ul{
+        list-style: none;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav ul li{
+        display: inline-block;
+        margin: 0 15px;
+        
+    }
+    
+    section nav ul li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 17px;
+        transition: 0.1s;
+    }
+    
+    section nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #30508b;
+        display: block;
+        transition: 0.2s linear;
+    }
+    
+    section nav ul li a:hover::after{
+        width: 100%;
+    }
+    
+    section nav ul li a:hover{
+        color: #30508b;
+    }
+    
+    section nav .icon i{
+        font-size: 18px;
+        color: #000;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav .icon i:hover{
+        color: #30508b;
+    }
+    
+    
+    
+    section .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        top: 130px;
+    }
+    
+    section .main .men_text h1{
+        font-size: 60px;
+        position: relative;
+        top: -90px;
+        left: 20px;
+    }
+    
+    section .main .men_text h1 span{
+        margin-left: 15px;
+        color: #30508b;
+        font-family: mv boli;
+        line-height: 22px;
+        font-size: 70px;
+    }
+    
+    section .main .main_image img{
+        width: 700px;
+        position: relative;
+        left: 70px;
+    }
+    
+    section p{
+        width: 650px;
+        text-align: justify;
+        position: relative;
+        left: 123px;
+        bottom: 120px;
+        line-height: 22px;
+    }
+    
+    section .main_btn{
+        background: #30508b;
+        position: relative;
+        left: 123px;
+        bottom: 30px;
+        width: 150px;
+        cursor: pointer;
+        padding: 12px 25px;
+    }
+    
+    section .main_btn a{
+        color: #fff;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    section .main_btn i{
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    section .main_btn:hover i{
+        transform: translateX(7px);
+    }
+    
+    
+    
+    .container {
+             display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                width: 360%;
+               
+                
+            }
+    
+    .box2 {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 100px;
+                margin-top: 140px;
+                width: 80%;
+                height:90%;
+               
+            }
+    .product_description {
+                width: 60%;
+                padding: 20px;
+                box-sizing: border-box;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                animation: muncul 1s ease-in-out 0.5s forwards;
+    
+                
+            }
+    .product_description h2 {
+                margin-top: 0;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 10
+            }
+    .gambar_produk {
+       
+        height: 600px ;
+       
+    }
+    .gambar_produk img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    /* .product_description p {
+                margin: 0;
+                font-size: 50px;
+                line-height: 1.5;
+            } */
+    .order_form {
+                width: 60%;
+                padding: 20px;
+                margin-left: 2%;
+                box-sizing: border-box;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                animation: muncul 1s ease-in-out 0.5s forwards;
+            }
+    .order_form h3 {
+                margin-top: 0;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+    .order_form label {
+                display: block;
+                margin-bottom: 5px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+    .order_form input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+    .order_form button {
+                background-color: #333;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 3px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+    .order_form button:hover {
+                background-color: #fff;
+                color: #333;
+                border: 1px solid #333;
+            }
+    .order_form p{
+        margin-top: 25%;
+        margin-left: -24%;
+        width: 90%;
+    }
+    
+    .BuktiBayar1 {
+        margin-top: -23%;
+    }
+    
+    .TombolS{
+        margin-top: 5%;
+    }
+    
+    .Norek{
+        margin-left: 5%;
+    }
+    
+    .Info{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    
+    
+    
+    .Deskripsi_Produk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        width: 360%;
+        margin-top: 85%;
+        animation: muncul 1s ease-in-out 0.5s forwards;
+        
+            }
+    .Deskripsi_Produk .All-Text-container{
+        width: 80%;
+        height: 160%;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+       
+    }
+    
+    .Deskripsi_Produk .All-Text-container .Title-Text-Container{
+        width: 96%;
+        height: 6%;
+        margin-left: 20px;
+        margin-top: 2%;
+        background-color: #a3bae4;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        
+    }
+    
+    .Title-Text-Container h3{
+        margin-left: 15px;
+        margin-top: 0%;
+        color: black;
+        font-size: 32px;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+    .Deskripsi_Produk .All-Text-container .Desc-Text-Container{
+        width: 96%;
+        height: 87%;
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color:#a3bae4;
+        justify-self: center;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .Deskripsi_Produk .All-Text-container .Desc-Text-Container img{
+    margin-top: 2%;
+    margin-left: 1%;
+    }
+    .Desc-Text-Container p{
+        margin-left: 15px;
+        margin-top: 0%;
+        color: black;
+        font-size: 24px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .Desc-Text-Container h2{
+        color: black;
+        margin-top: 5%;
+        margin-left: 3%;
+        font-size: 22px;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    
+    
+    
+    
+    /*Footer*/
+    
+    footer{
+        width: 370%;
+        margin-top: 10%;
+        padding: 30px 0 0 20px;
+        background: #eeeeee;
+        
+    }
+    
+    footer .footer_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    footer .footer_main .footer_tag{
+        text-align: center;
+    }
+    
+    footer .footer_main .footer_tag h2{
+        color: #000;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    
+    footer .footer_main .footer_tag p{
+        margin: 10px 0;
+    }
+    
+    footer .footer_main .footer_tag a{
+        margin: 0 5px;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    
+    footer .footer_main .footer_tag a:hover{
+        color:#30508b;
+    }
+    
+    footer .end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    
+    footer .end span{
+        color: #30508b;
+        margin-left: 10px;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 13px;
+    }
+    
+    ::-webkit-scrollbar-track{
+        border-radius: 15px;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #30508b;
+        border-radius: 15px;
+    }
+    
+    }
+
+/* =======-=-=-=-=-=-=-=-=-=Tampilan Website Untuk Galaxy Samsung A50=-=-=-=-=-=-=-=-=-==- */
+@media only screen and (min-width: 360px) and (min-height: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    
+    
+    @keyframes muncul1{
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    
+      @keyframes muncul{
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    section nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        left: 0;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+    
+    section nav .logo img{
+        width: 150px;
+        cursor: pointer;
+        margin: 7px 0;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav ul{
+        list-style: none;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav ul li{
+        display: inline-block;
+        margin: 0 15px;
+        
+    }
+    
+    section nav ul li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 17px;
+        transition: 0.1s;
+    }
+    
+    section nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #30508b;
+        display: block;
+        transition: 0.2s linear;
+    }
+    
+    section nav ul li a:hover::after{
+        width: 100%;
+    }
+    
+    section nav ul li a:hover{
+        color: #30508b;
+    }
+    
+    section nav .icon i{
+        font-size: 18px;
+        color: #000;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav .icon i:hover{
+        color: #30508b;
+    }
+    
+    
+    
+    section .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        top: 130px;
+    }
+    
+    section .main .men_text h1{
+        font-size: 60px;
+        position: relative;
+        top: -90px;
+        left: 20px;
+    }
+    
+    section .main .men_text h1 span{
+        margin-left: 15px;
+        color: #30508b;
+        font-family: mv boli;
+        line-height: 22px;
+        font-size: 70px;
+    }
+    
+    section .main .main_image img{
+        width: 700px;
+        position: relative;
+        left: 70px;
+    }
+    
+    section p{
+        width: 650px;
+        text-align: justify;
+        position: relative;
+        left: 123px;
+        bottom: 120px;
+        line-height: 22px;
+    }
+    
+    section .main_btn{
+        background: #30508b;
+        position: relative;
+        left: 123px;
+        bottom: 30px;
+        width: 150px;
+        cursor: pointer;
+        padding: 12px 25px;
+    }
+    
+    section .main_btn a{
+        color: #fff;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    section .main_btn i{
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    section .main_btn:hover i{
+        transform: translateX(7px);
+    }
+    
+    
+    
+    .container {
+             display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                width: 360%;
+               
+                
+            }
+    
+    .box2 {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 100px;
+                margin-top: 140px;
+                width: 80%;
+                height:90%;
+               
+            }
+    .product_description {
+                width: 60%;
+                padding: 20px;
+                box-sizing: border-box;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                animation: muncul 1s ease-in-out 0.5s forwards;
+    
+                
+            }
+    .product_description h2 {
+                margin-top: 0;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 10
+            }
+    .gambar_produk {
+       
+        height: 600px ;
+       
+    }
+    .gambar_produk img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    /* .product_description p {
+                margin: 0;
+                font-size: 50px;
+                line-height: 1.5;
+            } */
+    .order_form {
+                width: 60%;
+                padding: 20px;
+                margin-left: 2%;
+                box-sizing: border-box;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                animation: muncul 1s ease-in-out 0.5s forwards;
+            }
+    .order_form h3 {
+                margin-top: 0;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+    .order_form label {
+                display: block;
+                margin-bottom: 5px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+    .order_form input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+    .order_form button {
+                background-color: #333;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 3px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+    .order_form button:hover {
+                background-color: #fff;
+                color: #333;
+                border: 1px solid #333;
+            }
+    .order_form p{
+        margin-top: 25%;
+        margin-left: -24%;
+        width: 90%;
+    }
+    
+    .BuktiBayar1 {
+        margin-top: -23%;
+    }
+    
+    .TombolS{
+        margin-top: 5%;
+    }
+    
+    .Norek{
+        margin-left: 5%;
+    }
+    
+    .Info{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    
+    
+    
+    .Deskripsi_Produk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        width: 360%;
+        margin-top: 54%;
+        animation: muncul 1s ease-in-out 0.5s forwards;
+        
+            }
+    .Deskripsi_Produk .All-Text-container{
+        width: 80%;
+        height: 160%;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+       
+    }
+    
+    .Deskripsi_Produk .All-Text-container .Title-Text-Container{
+        width: 96%;
+        height: 6%;
+        margin-left: 20px;
+        margin-top: 2%;
+        background-color: #a3bae4;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        
+    }
+    
+    .Title-Text-Container h3{
+        margin-left: 15px;
+        margin-top: 0%;
+        color: black;
+        font-size: 32px;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+    .Deskripsi_Produk .All-Text-container .Desc-Text-Container{
+        width: 96%;
+        height: 87%;
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color:#a3bae4;
+        justify-self: center;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .Deskripsi_Produk .All-Text-container .Desc-Text-Container img{
+    margin-top: 2%;
+    margin-left: 1%;
+    }
+    .Desc-Text-Container p{
+        margin-left: 15px;
+        margin-top: 0%;
+        color: black;
+        font-size: 24px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .Desc-Text-Container h2{
+        color: black;
+        margin-top: 5%;
+        margin-left: 3%;
+        font-size: 22px;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    
+    
+    
+    
+    /*Footer*/
+    
+    footer{
+        width: 370%;
+        margin-top: 110%;
+        padding: 30px 0 0 20px;
+        background: #eeeeee;
+        
+    }
+    
+    footer .footer_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    footer .footer_main .footer_tag{
+        text-align: center;
+    }
+    
+    footer .footer_main .footer_tag h2{
+        color: #000;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    
+    footer .footer_main .footer_tag p{
+        margin: 10px 0;
+    }
+    
+    footer .footer_main .footer_tag a{
+        margin: 0 5px;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    
+    footer .footer_main .footer_tag a:hover{
+        color:#30508b;
+    }
+    
+    footer .end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    
+    footer .end span{
+        color: #30508b;
+        margin-left: 10px;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 13px;
+    }
+    
+    ::-webkit-scrollbar-track{
+        border-radius: 15px;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #30508b;
+        border-radius: 15px;
+    }
+    
+    }
+
+/* =======-=-=-=-=-=-=-=-=-=Tampilan Website Untuk Samsung Galaxy A50/SE =-=-=-=-=-=-=-=-=-==- */
+@media only screen and (min-width: 375px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    
+    
+    @keyframes muncul1{
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    
+      @keyframes muncul{
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    section nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        left: 0;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+    
+    section nav .logo img{
+        width: 150px;
+        cursor: pointer;
+        margin: 7px 0;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav ul{
+        list-style: none;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav ul li{
+        display: inline-block;
+        margin: 0 15px;
+        
+    }
+    
+    section nav ul li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 17px;
+        transition: 0.1s;
+    }
+    
+    section nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #30508b;
+        display: block;
+        transition: 0.2s linear;
+    }
+    
+    section nav ul li a:hover::after{
+        width: 100%;
+    }
+    
+    section nav ul li a:hover{
+        color: #30508b;
+    }
+    
+    section nav .icon i{
+        font-size: 18px;
+        color: #000;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        animation: muncul1 1s ease-in-out 0.5s forwards;
+    }
+    
+    section nav .icon i:hover{
+        color: #30508b;
+    }
+    
+    
+    
+    section .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        top: 130px;
+    }
+    
+    section .main .men_text h1{
+        font-size: 60px;
+        position: relative;
+        top: -90px;
+        left: 20px;
+    }
+    
+    section .main .men_text h1 span{
+        margin-left: 15px;
+        color: #30508b;
+        font-family: mv boli;
+        line-height: 22px;
+        font-size: 70px;
+    }
+    
+    section .main .main_image img{
+        width: 700px;
+        position: relative;
+        left: 70px;
+    }
+    
+    section p{
+        width: 650px;
+        text-align: justify;
+        position: relative;
+        left: 123px;
+        bottom: 120px;
+        line-height: 22px;
+    }
+    
+    section .main_btn{
+        background: #30508b;
+        position: relative;
+        left: 123px;
+        bottom: 30px;
+        width: 150px;
+        cursor: pointer;
+        padding: 12px 25px;
+    }
+    
+    section .main_btn a{
+        color: #fff;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    section .main_btn i{
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    section .main_btn:hover i{
+        transform: translateX(7px);
+    }
+    
+    
+    
+    .container {
+             display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                width: 360%;
+               
+                
+            }
+    
+    .box2 {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 100px;
+                margin-top: 140px;
+                width: 80%;
+                height:90%;
+               
+            }
+    .product_description {
+                width: 60%;
+                padding: 20px;
+                box-sizing: border-box;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                animation: muncul 1s ease-in-out 0.5s forwards;
+    
+                
+            }
+    .product_description h2 {
+                margin-top: 0;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 10
+            }
+    .gambar_produk {
+       
+        height: 600px ;
+       
+    }
+    .gambar_produk img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    /* .product_description p {
+                margin: 0;
+                font-size: 50px;
+                line-height: 1.5;
+            } */
+    .order_form {
+                width: 60%;
+                padding: 20px;
+                margin-left: 2%;
+                box-sizing: border-box;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                animation: muncul 1s ease-in-out 0.5s forwards;
+            }
+    .order_form h3 {
+                margin-top: 0;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+    .order_form label {
+                display: block;
+                margin-bottom: 5px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+    .order_form input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+    .order_form button {
+                background-color: #333;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 3px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+    .order_form button:hover {
+                background-color: #fff;
+                color: #333;
+                border: 1px solid #333;
+            }
+    .order_form p{
+        margin-top: 25%;
+        margin-left: -24%;
+        width: 90%;
+    }
+    
+    .BuktiBayar1 {
+        margin-top: -23%;
+    }
+    
+    .TombolS{
+        margin-top: 5%;
+    }
+    
+    .Norek{
+        margin-left: 5%;
+    }
+    
+    .Info{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    
+    
+    
+    .Deskripsi_Produk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        width: 360%;
+        margin-top: 70%;
+        animation: muncul 1s ease-in-out 0.5s forwards;
+        
+            }
+    .Deskripsi_Produk .All-Text-container{
+        width: 80%;
+        height: 160%;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+       
+    }
+    
+    .Deskripsi_Produk .All-Text-container .Title-Text-Container{
+        width: 96%;
+        height: 6%;
+        margin-left: 20px;
+        margin-top: 2%;
+        background-color: #a3bae4;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        
+    }
+    
+    .Title-Text-Container h3{
+        margin-left: 15px;
+        margin-top: 0%;
+        color: black;
+        font-size: 32px;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+    .Deskripsi_Produk .All-Text-container .Desc-Text-Container{
+        width: 96%;
+        height: 87%;
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color:#a3bae4;
+        justify-self: center;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .Deskripsi_Produk .All-Text-container .Desc-Text-Container img{
+    margin-top: 2%;
+    margin-left: 1%;
+    }
+    .Desc-Text-Container p{
+        margin-left: 15px;
+        margin-top: 0%;
+        color: black;
+        font-size: 24px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .Desc-Text-Container h2{
+        color: black;
+        margin-top: 5%;
+        margin-left: 3%;
+        font-size: 22px;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    
+    
+    
+    
+    /*Footer*/
+    
+    footer{
+        width: 370%;
+        margin-top: 90%;
+        padding: 30px 0 0 20px;
+        background: #eeeeee;
+        
+    }
+    
+    footer .footer_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    footer .footer_main .footer_tag{
+        text-align: center;
+    }
+    
+    footer .footer_main .footer_tag h2{
+        color: #000;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    
+    footer .footer_main .footer_tag p{
+        margin: 10px 0;
+    }
+    
+    footer .footer_main .footer_tag a{
+        margin: 0 5px;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+    
+    footer .footer_main .footer_tag a:hover{
+        color:#30508b;
+    }
+    
+    footer .end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    
+    footer .end span{
+        color: #30508b;
+        margin-left: 10px;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 13px;
+    }
+    
+    ::-webkit-scrollbar-track{
+        border-radius: 15px;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #30508b;
+        border-radius: 15px;
+    }
+    
+    }
+/* =======-=-=-=-=-=-=-=-=-=Tampilan Website Untuk Samsung=-=-=-=-=-=-=-=-=-==- */
+@media only screen and (min-width: 412px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@keyframes muncul1{
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes muncul{
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 150px;
+    cursor: pointer;
+    margin: 7px 0;
+    animation: muncul1 1s ease-in-out 0.5s forwards;
+}
+
+section nav ul{
+    list-style: none;
+    animation: muncul1 1s ease-in-out 0.5s forwards;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #30508b;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #30508b;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: muncul1 1s ease-in-out 0.5s forwards;
+}
+
+section nav .icon i:hover{
+    color: #30508b;
+}
+
+
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #30508b;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img{
+    width: 700px;
+    position: relative;
+    left: 70px;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 120px;
+    line-height: 22px;
+}
+
+section .main_btn{
+    background: #30508b;
+    position: relative;
+    left: 123px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+
+
+.container {
+         display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 300%;
+           
+            
+        }
+
+.box2 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            margin-top: 140px;
+            width: 80%;
+            height:90%;
+           
+        }
+.product_description {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            animation: muncul 1s ease-in-out 0.5s forwards;
+
+            
+        }
+.product_description h2 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10
+        }
+.gambar_produk {
+   
+    height: 600px ;
+   
+}
+.gambar_produk img{
+    width: 100%;
+    height: 100%;
+    
+}
+/* .product_description p {
+            margin: 0;
+            font-size: 50px;
+            line-height: 1.5;
+        } */
+.order_form {
+            width: 60%;
+            padding: 20px;
+            margin-left: 2%;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            animation: muncul 1s ease-in-out 0.5s forwards;
+        }
+.order_form h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+.order_form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+.order_form input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+.order_form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+.order_form button:hover {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #333;
+        }
+.order_form p{
+    margin-top: 25%;
+    margin-left: -24%;
+    width: 90%;
+}
+
+.BuktiBayar1 {
+    margin-top: -23%;
+}
+
+.TombolS{
+    margin-top: 5%;
+}
+
+.Norek{
+    margin-left: 5%;
+}
+
+.Info{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+
+
+.Deskripsi_Produk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 300%;
+    margin-top: 5%;
+    animation: muncul 1s ease-in-out 0.5s forwards;
+    
+        }
+.Deskripsi_Produk .All-Text-container{
+    width: 80%;
+    height: 160%;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   
+}
+
+.Deskripsi_Produk .All-Text-container .Title-Text-Container{
+    width: 96%;
+    height: 6%;
+    margin-left: 20px;
+    margin-top: 2%;
+    background-color: #a3bae4;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    
+}
+
+.Title-Text-Container h3{
+    margin-left: 15px;
+    margin-top: 0%;
+    color: black;
+    font-size: 32px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.Deskripsi_Produk .All-Text-container .Desc-Text-Container{
+    width: 96%;
+    height: 87%;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color:#a3bae4;
+    justify-self: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.Deskripsi_Produk .All-Text-container .Desc-Text-Container img{
+margin-top: 2%;
+margin-left: 1%;
+}
+.Desc-Text-Container p{
+    margin-left: 15px;
+    margin-top: 0%;
+    color: black;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Desc-Text-Container h2{
+    color: black;
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+
+/*Footer*/
+
+footer{
+    width: 300%;
+    margin-top: 10%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+    
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag a{
+    margin: 0 5px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+footer .footer_main .footer_tag a:hover{
+    color:#30508b;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: #30508b;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #30508b;
+    border-radius: 15px;
+}
+
+}
+
+/* =======-=-=-=-=-=-=-=-=-=Tampilan Website Untuk Laptop=-=-=-=-=-=-=-=-=-==- */
+@media only screen and (min-width: 992px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@keyframes muncul1{
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes muncul{
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 150px;
+    cursor: pointer;
+    margin: 7px 0;
+    animation: muncul1 1s ease-in-out 0.5s forwards;
+}
+
+section nav ul{
+    list-style: none;
+    animation: muncul1 1s ease-in-out 0.5s forwards;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #30508b;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #30508b;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: muncul1 1s ease-in-out 0.5s forwards;
+}
+
+section nav .icon i:hover{
+    color: #30508b;
+}
+
+
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #30508b;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img{
+    width: 700px;
+    position: relative;
+    left: 70px;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 120px;
+    line-height: 22px;
+}
+
+section .main_btn{
+    background: #30508b;
+    position: relative;
+    left: 123px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+
+
+.container {
+         display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 100%;
+           
+            
+        }
+
+.box2 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            margin-top: 140px;
+            width: 80%;
+            height:90%;
+           
+        }
+.product_description {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            animation: muncul 1s ease-in-out 0.5s forwards;
+
+            
+        }
+.product_description h2 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10
+        }
+.gambar_produk {
+   
+    height: 600px ;
+   
+}
+.gambar_produk img{
+    width: 100%;
+    height: 100%;
+    
+}
+/* .product_description p {
+            margin: 0;
+            font-size: 50px;
+            line-height: 1.5;
+        } */
+.order_form {
+            width: 60%;
+            padding: 20px;
+            margin-left: 2%;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            animation: muncul 1s ease-in-out 0.5s forwards;
+        }
+.order_form h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+.order_form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+.order_form input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+.order_form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+.order_form button:hover {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #333;
+        }
+.order_form p{
+    margin-top: 25%;
+    margin-left: -24%;
+    width: 90%;
+}
+
+.BuktiBayar1 {
+    margin-top: -23%;
+}
+
+.TombolS{
+    margin-top: 5%;
+}
+
+.Norek{
+    margin-left: 5%;
+}
+
+.Info{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+
+
+.Deskripsi_Produk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    margin-top: 20%;
+    animation: muncul 1s ease-in-out 0.5s forwards;
+    width: 100%;
+        }
+.Deskripsi_Produk .All-Text-container{
+    width: 80%;
+    height: 160%;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   
+}
+
+.Deskripsi_Produk .All-Text-container .Title-Text-Container{
+    width: 96%;
+    height: 6%;
+    margin-left: 20px;
+    margin-top: 2%;
+    background-color: #a3bae4;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    
+}
+
+.Title-Text-Container h3{
+    margin-left: 15px;
+    margin-top: 0%;
+    color: black;
+    font-size: 32px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.Deskripsi_Produk .All-Text-container .Desc-Text-Container{
+    width: 96%;
+    height: 87%;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color:#a3bae4;
+    justify-self: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.Deskripsi_Produk .All-Text-container .Desc-Text-Container img{
+margin-top: 2%;
+margin-left: 1%;
+}
+.Desc-Text-Container p{
+    margin-left: 15px;
+    margin-top: 0%;
+    color: black;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Desc-Text-Container h2{
+    color: black;
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    margin-top: 5%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag a{
+    margin: 0 5px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+footer .footer_main .footer_tag a:hover{
+    color:#30508b;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: #30508b;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #30508b;
+    border-radius: 15px;
+}
+
+}
